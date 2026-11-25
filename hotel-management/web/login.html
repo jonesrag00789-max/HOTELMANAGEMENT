@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in – Grand Meridian</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="auth">
+<aside class="auth-side"><div><h1>Grand Meridian</h1><p>Book your room in a few clicks and manage every stay in one place.</p></div><ul><li>Standard, Deluxe and Suite rooms</li><li>Instant confirmation, no double bookings</li><li>Free cancellation up to 2 days before check-in</li></ul></aside>
+<main class="auth-main">
+  <form class="auth-form" id="authForm" data-mode="login" novalidate>
+    <h2>Welcome back</h2>
+    <p class="muted">Sign in to book and manage your stays.</p>
+    <div class="stackf">
+      <div id="error" class="error" role="alert" hidden></div>
+      <label class="field">Username <input id="username" autocomplete="username" autofocus></label>
+      <label class="field">Password <input id="password" type="password" autocomplete="current-password"></label>
+    </div>
+    <button class="btn primary block" id="submit">Sign in</button>
+    <p class="alt">New here? <a href="register.html">Create an account</a></p>
+    <p class="alt small">Demo admin: admin / admin123</p>
+  </form>
+</main>
+</div>
+<script src="auth.js"></script>
+</body></html>
